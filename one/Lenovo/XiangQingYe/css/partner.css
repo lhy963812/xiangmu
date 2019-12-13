@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/* 轮播图 */
+.banner {
+	height: 455px;
+}
+
+.banner .p1 {
+	background: url(../img/partner/ban1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner .p2 {
+	background: url(../img/partner/ban2.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* 分享活动 */
+.share {
+	height: 455px;
+	background-color: #F7F7F7;
+}
+
+.share .pic {
+	/* height: 375px; */
+	width: 75%;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.share .pic>div {
+	float: left;
+	height: 100%;
+	width: calc((100% - 30px) / 4);
+}
+
+.share .pic>div img {
+	height: 100%;
+	width: 100%;
+}
+
+.share .pic>div div:first-child {
+	height: 248px;
+	z-index: 1;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	overflow: hidden;
+}
+
+.share .pic>div div:first-child:hover {
+	z-index: 2;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+.share .pic>div div:last-child {
+	height: 121px;
+	z-index: 1;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+	overflow: hidden;
+}
+
+.share .pic>div div:last-child:hover {
+	z-index: 2;
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+/* 今日推荐 */
+.tuijian {
+	height: 930px;
+}
+
+.tuijian .top {
+	height: 120px;
+	text-align: center;
+}
+
+.tuijian .top span {
+	display: inline-block;
+	font-size: 40px;
+	color: black;
+	padding-top: 50px;
+}
+
+.tuijian .con {
+	height: 810px;
+}
+
+.tuijian .left {
+	width: 30%;
+	height: 100%;
+}
+
+.tuijian div div>div p {
+	cursor: pointer;
+}
+
+.tuijian .left div:first-child {
+	height: 325px;
+	width: 780px;
+	/* background-color: pink; */
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+
+.tuijian .left div:last-child {
+	height: 485px;
+	width: 100%;
+	/* background-color: pink; */
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+.tuijian .cen {
+	width: 35%;
+	height: 100%;
+}
+
+.tuijian .cen div:last-child {
+	height: 485px;
+	width: 100%;
+	margin-top: 325px;
+}
+
+.tuijian .cen div:last-child div {
+	width: 100%;
+	height: calc((100%) / 2);
+	/* background-color: pink; */
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+.tuijian .cen div:last-child div:last-child {
+	margin-top: 0;
+}
+
+.tuijian .rgt {
+	width: 35%;
+	height: 100%;
+}
+
+.tuijian .rgt div:first-child {
+	height: 568px;
+	width: 1005;
+	/* background-color: pink; */
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+.tuijian .rgt div:last-child {
+	height: 242px;
+	width: 100%;
+	/* background-color: pink; */
+	border: 1px solid #eee;
+	box-sizing: border-box;
+}
+
+.img {
+
+	height: 200px;
+	width: 200px;
+}
+
+.p1 {
+	margin-bottom: 20px;
+
+}
+
+.p3 {
+
+	margin: 20px 0;
+}
+
+.p4 {
+	margin-top: 40px;
+}
+
+.red {
+	color: #E6574F;
+	font-size: 25px;
+}
+
+.block {
+	color: black;
+}
+
+.size {
+	font-size: 20px;
+}
+
+.bg1 {
+	padding-top: 50px;
+	padding-left: 50px;
+	background: url(../img/partner/t1.jpg) no-repeat center right;
+	background-size: 200px 200px;
+	background-position: 500px;
+}
+
+.bg2 {
+	text-align: center;
+	padding-top: 30px;
+	background: url(../img/partner/t2.jpg) no-repeat bottom center;
+	background-size: 170px 170px;
+	background-position: 95px 260px;
+}
+
+.bg2 p:first-child {
+	margin-left: 35px;
+	width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bg3 {
+	padding-top: 50px;
+	padding-left: 50px;
+	background: url(../img/partner/t5.jpg) no-repeat bottom center;
+	background-size: 180px 180px;
+	background-position: 120px 330px;
+}
+
+.bg3 p:first-child {
+	width: 300px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bg4 {
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 20px;
+	background: url(../img/partner/t3.jpg) no-repeat top left;
+	background-size: 180px 180px;
+}
+
+.bg4 p:first-child {
+	margin-left: 185px;
+	width: 230px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bg4 p:last-child {
+	width: 260px;
+}
+
+.bg5 {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	background: url(../img/partner/t4.jpg) no-repeat center right;
+	background-size: 180px 180px;
+}
+
+.bg5 p:first-child {
+	width: 220px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bg6 {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	background: url(../img/partner/t6.jpg) no-repeat center right;
+	background-size: 180px 180px;
+}
+
+.bg6 p:first-child {
+	width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

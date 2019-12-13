@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<link rel="shortcut icon" type="text/css" href="/static/images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/static/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<title>登录页</title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header clearfix">
+				<a href="javascript:void(0)" onclick="window.history.back()">&lt;</a>
+				<h6>联想会员登录</h6>
+				<a href="javascript:void(0)" class="nav-show">···</a>
+			</div>
+			<div class="nav">
+				<a href="/pages/home/index.html">
+					<i><img src="../category/shouye.png" ></i>
+					<span>首页</span>
+				</a>
+				<a href="">
+					<i><img src="../category/sousuo.png" ></i>
+					<span>搜索</span>
+				</a>
+				<a href="/pages/personal/index.html">
+					<i><img src="../category/geren.png" ></i>
+					<span>个人中心</span>
+				</a>
+			</div>
+			<div class="content">
+				<img src="logo.png" >
+				<div class="login-input-warp">
+					<input type="text" class="name" placeholder="请输入用户名" />
+				</div>
+				<div class="login-input-warp">
+					<input type="password" class="pwd" placeholder="请输入密码" />
+				</div>
+				<button type="button" class="btn-login-pwd">登录</button>
+				<button type="button" class="register-btn">还没有账号？立即注册</button>
+				<div class="login-mains clearfix">
+					<a href="" class="login-phone-fast">手机验证码快捷登录></a>
+					<a href="" class="reset-btn">忘记密码？</a>
+				</div>
+				<div class="coopertion">
+					<div class="coopertion-title">
+						<span></span>
+						<em>您还可以用以下方式登录</em>
+						<span></span>
+					</div>
+					<div class="coopertion-item">
+						<a href=""><img src="qq.png" ></a>
+						<a href=""><img src="wb.png" ></a>
+						<a href=""><img src="zfb.png" ></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-wrapper logon" style="display: none;">
+			<div class="header clearfix">
+				<a href="javascript:void(0)" onclick="window.history.back()">&lt;</a>
+				<h6>联想会员注册</h6>
+				<a href="javascript:void(0)" class="nav-show">···</a>
+			</div>
+			<div class="nav">
+				<a href="">
+					<i><img src="../category/shouye.png" ></i>
+					<span>首页</span>
+				</a>
+				<a href="">
+					<i><img src="../category/sousuo.png" ></i>
+					<span>搜索</span>
+				</a>
+				<a href="">
+					<i><img src="../category/geren.png" ></i>
+					<span>个人中心</span>
+				</a>
+			</div>
+			<div class="content">
+				<img src="logo.png" >
+				<div class="login-input-warp">
+					<input type="text" class="logon-name" placeholder="请输入用户名/手机号" />
+				</div>
+				<div class="login-input-warp">
+					<input type="text" class="yanzheng" placeholder="请输入验证码" />
+					<button type="button">获取验证码</button>
+				</div>
+				<div class="login-input-warp">
+					<input type="password" class="logon-pwd" placeholder="请输入密码" />
+				</div>
+				<div class="regist_agreement">
+					<span>
+						同意联想
+						<a href="">使用条款</a>
+						和
+						<a href="">隐私权政策</a>
+					</span>
+					<input type="checkbox" checked="checked">
+				</div>
+				<button type="button" class="btn-login-zhuce">注册</button>
+				<button type="button" class="login-btn">已有账号？去登陆</button>
+				<div class="login-mains clearfix">
+					<a href="" class="login-phone-fast">手机验证码快捷登录></a>
+					<a href="" class="reset-btn">企业用户注册</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<script src="/static/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/notice.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/http.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

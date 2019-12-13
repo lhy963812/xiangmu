@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>收银台</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cashier/cashier.css" />
+		<script src="js/jquery/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cashier/cashier.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="bg-img">
+			<!-- 头部 -->
+			<div class="header">
+				<div class="container">
+					<div class="header-logo fl">
+						<img src="img/payment/toubu/logo.png">
+					</div>
+					<span class="core">收银台</span>
+					<ul class="fr clearfix">
+						<li class="fr">
+							<a href="" class="nav">| 退出</a>
+						</li>
+						<li class="fr">
+							<a href="../guoxiaohan/user.html" class="nav">| 我的订单</a>
+						</li>
+						<li class="fr">
+							<a href="../guoxiaohan/user.html" class="nav">| 用户</a>
+						</li>
+						<li class="fr">
+							<a href="../liuhongyong/firstpage.html" class="nav">返回首页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 订单提示 -->
+			<div class="container">
+				<div class="detai clearfix">
+					<div class="clearfix">
+						<div class="inline fl">
+							<img src="img/cashier/dingdan/c7e1bec4-2b86-41d5-b873-2df985e3c9eb.png" >
+						</div>
+						<div class="inline-title fl">
+							<p class="success">订单提交成功，请尽快付款！</p>
+							<p>请您在<span class="time"></span><span class="time1"></span><span>前完成支付，否则订单会被自动取消</span></p>
+						</div>
+						<div class="inline-rgt fr">
+							<p>应付金额: <br><span class="price-red"></span></p>
+							<p class="details">查看详情<span><img src="img/cashier/dingdan/870b693b-538e-43d3-86da-ef582cedfc58.png" ></span></p>
+						</div>
+					</div>
+					<div class="hide-box fr clearfix">
+						<div class="mingzi fl"></div>
+						<div class="t-phone"></div>
+						<div class="t-add"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 支付平台 -->
+			<div class="container">
+				<div class="platform">
+					<div class="platform-title">支付平台</div>
+					<div class="platform-choice clearfix">
+						<div class="fl"><img src="img/cashier/zhifu/zhifubao.png"></div>
+						<div class="fl weixin"><img src="img/cashier/zhifu/weixinzhifu.png"></div>
+						<div class="fl"><img src="img/cashier/zhifu/yinlian.png"></div>
+					</div>
+					<!-- 微信收款 -->
+					<div class="mask">
+						<div class="payType">
+							<div class="type1"></div>
+							<div class="type2"></div>
+							<div class="guan"></div>
+							<div class="pay-title">微信支付</div>
+							<div class="pay-img"></div>
+							<div class="pay-text">请使用<span class="text-red">微信</span>扫一扫<br>二维码完成支付</div>
+						</div>
+					</div>
+				</div>
+				<!-- 分期付款 -->
+				<div class="stages platform">
+					<div class="stages-title platform-title">分期付款</div>
+					<div class="stages-choice platform-choice clearfix">
+						<div class="fl"><img src="img/cashier/fenqi/huabei.png"></div>
+					</div>
+				</div>
+				<!-- 银行借记卡及信用卡 -->
+				<div class="bank platform">
+					<div class="bank-title platform-title">银行借记卡及信用卡</div>
+					<div class="bank-choice platform-choice clearfix">
+						<div class="fl"><img src="img/cashier/yinhang/40c1c271-a96e-4306-8dbc-1df31de51cee.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/b03645ea-8947-4b1c-a117-cc2ec3f79904.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/e8dfe84a-9f2c-4358-bc2d-c40996c2de06.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/72d4688c-a92a-4c35-b086-f8952a8084a0.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/e3f1b35e-5224-432b-a004-fa0acc803a95.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/8c9260f8-04ed-449d-87a3-aa60a3bd0778.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/1f41cc23-8b28-4de6-9665-75ead76c1717.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/61a8771d-278a-4fc9-bbbb-4256327b852f.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/68bfa0b1-6eeb-48d5-902b-1cec899c529b.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/b5fd0539-7c77-4a65-aeb3-d5e70230ed91.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/53c9be51-f457-45a1-9a33-6de69c600e39.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/40c1c271-a96e-4306-8dbc-1df31de51cee.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/b03645ea-8947-4b1c-a117-cc2ec3f79904.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/e8dfe84a-9f2c-4358-bc2d-c40996c2de06.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/72d4688c-a92a-4c35-b086-f8952a8084a0.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/e3f1b35e-5224-432b-a004-fa0acc803a95.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/8c9260f8-04ed-449d-87a3-aa60a3bd0778.png"></div>
+						<div class="bank-hide fl"><img src="img/cashier/yinhang/68bfa0b1-6eeb-48d5-902b-1cec899c529b.png"></div>
+						<div class="fl">
+							<p class="see">查看更多</p>
+							<p class="collect">收起更多</p>
+						</div>
+					</div>
+				</div>
+				<!-- 企业网银支付 -->
+				<div class="enterprise platform">
+					<div class="enterprise-title platform-title">企业网银支付</div>
+					<div class="enterprise-choice platform-choice clearfix">
+						<div class="fl"><img src="img/cashier/yinhang/40c1c271-a96e-4306-8dbc-1df31de51cee.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/e3f1b35e-5224-432b-a004-fa0acc803a95.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/e8dfe84a-9f2c-4358-bc2d-c40996c2de06.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/b5fd0539-7c77-4a65-aeb3-d5e70230ed91.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/72d4688c-a92a-4c35-b086-f8952a8084a0.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/b03645ea-8947-4b1c-a117-cc2ec3f79904.png"></div>
+						<div class="fl"><img src="img/cashier/yinhang/57e61f7e-d788-4b67-9d6e-e5b6e3314cef.png"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 支付按钮 -->
+			<div class="btn-box">
+				<div class="container clearfix">
+					<div class="problem fl">
+						<a href="" class="problem-title">支付常见问题<img src="img/cashier/yejiao/lansewenhao.png" ></a>
+					</div>
+					<div class="fr btn-red">立即支付</div>
+					<div class="fr tips">支付金额:<span class="tips-price"></span></div>
+				</div>
+			</div>
+			<!-- 页脚 -->
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>

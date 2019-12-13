@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*登录页load*/
+.box{
+	width: 100%;
+	height: 590px;
+	background-color: #F0F0F0;
+}
+.box .photo{
+	width: 750px;
+	height: 590px;
+	background: url(../img/photo.png) no-repeat;
+	background-size: cover;
+}
+.box .text{
+    margin-top: 32px;
+    margin-right: 21px;
+    width: 410px;
+    height: 525px;
+    background-color: #fff;
+    position: relative;
+}
+.box .text .login_switch{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: url(../img/saoma.png) no-repeat right;
+}
+.box .text .login_switch2{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	background: url(../img/dlfangshi.png) no-repeat right;
+}
+.box .text .login_static{
+	width: 410px;
+	height: 290px;
+}
+.box .text .login_title{
+	font-size: 24px;
+    line-height: 24px;
+    color: #424242;
+    font-weight: 700;
+    margin: 33px 36px 36px;
+}
+.box .text .normal_login_box{
+	width: 348px;
+	height: 114px;
+	margin: 0 31px;
+}
+.box .text .normal_login_box .login_input{
+	width: 100%;
+    margin-bottom: 14px;
+    position: relative;
+}
+.box .text .login_input .tel{
+	width: 282px;
+    border: 1px solid #d6d6d6;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #8c8c8c;
+    padding-right: 50px;
+}
+.box .text .login_mains,.box .text .login_mains2{
+	margin: 14px 31px 0;
+}
+.box .text .login_mains input{
+    margin-right: 5px;
+}
+.box .text .login_mains p{
+	display: block;
+    line-height: 14px;
+    color: #000;
+    font-size: 14px;
+    width: 90px;
+    cursor: pointer;
+}
+.box .text .login_static .denglu{
+	display: block;
+    height: 50px;
+    line-height: 50px;
+    width: 348px;
+    background-color: #e22319;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin: 10px 31px 0;
+}
+.box .text .login_static .login_mains2 a{
+	border-right: 1px solid #a4a3a3;
+    padding-right: 5px;
+	font-size: 14px;
+}
+.box .text .login_static .cooperation{
+	position: absolute;
+    left: 26px;
+    bottom: 0;
+    width: 358px;
+    height: 90px;
+}
+.box .text .login_static .cooperation .cooperation_title{
+	text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 14px;
+    height: 14px;
+}
+.box .text .login_static .cooperation_title span{
+	width: 137px;
+    height: 1px;
+    background-color: #a4a3a3;
+    margin-top: 6px;
+}
+.box .text .login_static .cooperation .cooperation_items{
+	margin-top: 15px;
+    padding: 0 60px;
+}
+.box .text .login_static .cooperation .cooperation_items a:first-child{
+	margin-left: 0;
+}
+.box .text .login_static .cooperation .cooperation_items a{
+	width: 31px;
+	height: 31px;
+	margin-left: 38px;
+	background: no-repeat;
+}
+.box .text .login_scan{
+	display: none;
+}
+.box .text .login_scan .scan_title{
+	font-size: 24px;
+    line-height: 24px;
+    color: #424242;
+    font-weight: 700;
+    margin: 33px 36px 36px;
+}
+.box .text .login_scan .scan_nr{
+	width: 330px;
+    margin: 101px auto;
+    padding-bottom: 20px;
+}
+.box .text .login_scan .scan_nr .nr_erwm{
+	width: 210px;
+    height: 210px;
+    margin: 10px auto 22px;
+	background: url(../img/show.jpg) no-repeat center center;
+}
+.box .text .login_scan .scan_nr .nr_p{
+	width: 100%;
+    margin: 0 auto;
+    height: 14px;
+}
+.box .text .login_scan .scan_nr .nr_p p{
+	line-height: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #424242;
+}
+.box .company_news{
+	margin-top: 55px;
+	margin-bottom: 30px;
+}
+.company_news p{
+	font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 17px;
+}

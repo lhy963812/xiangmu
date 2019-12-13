@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<link rel="shortcut icon" type="text/css" href="/static/images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/static/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script> window.PointerEvent = undefined; </script>
+		<title></title>
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<div class="search-wrapper clearfix">
+					<a href="javascript:void(0)" onclick="window.history.back()"><img src="back.png" ></a>
+					<div class="search-wrapper-key clearfix">
+						<a href=""><img src="search1.png" ></a>
+						<input type="text" name="" id="" value="" />
+						<a href=""><img src="delete.png" ></a>
+					</div>
+					<span>搜索</span>
+				</div>
+				<ul class="sort">
+					<li class="xinpin" data-col="price">新品</li>
+					<li class="xiaoliang" data-col="sale">销量</li>
+					<li class="jiage" data-col="price">价格</li>
+					<li class="pinglun" data-col="rate">评论</li>
+				</ul>
+			</div>
+			<div class="content">
+				<div class="scroll">
+					<ul class="list clearfix"></ul>
+					<p class="info">上拉加载更多。。</p>
+				</div>
+			</div>
+		</div>
+		
+		<script src="/static/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/imagesloaded.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/iscroll-probe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/notice.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/http.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

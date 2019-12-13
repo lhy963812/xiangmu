@@ -1,0 +1,413 @@
+@charset "utf-8";
+
+/* 轮播图 */
+.banner{
+	margin-top: 90px;
+}
+.swiper-wrapper{
+	cursor: pointer;
+}
+.banner1 {
+	background: url(../../img/servise/banner/air.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner2 {
+	background: url(../../img/servise/banner/kx.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner3 {
+	background: url(../../img/servise/banner/robotbanner.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner4 {
+	background: url(../../img/servise/banner/maya1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner5 {
+	background: url(../../img/servise/banner/beibao.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner6 {
+	background: url(../../img/servise/banner/maya2.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner7 {
+	background: url(../../img/servise/banner/chapai.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.swiper-container,
+.swiper-wrapper {
+	height: 180px;
+}
+.paging span{
+	width: 12px;
+	height: 12px;
+	border: 1px solid #fff;
+	background-color: #555;
+}
+
+/* 联想服务 */
+.search{
+	margin-top: 23px;
+	border-bottom: 1px solid #ccc;
+}
+.words{
+	font-size: 30px;
+	text-align: center;
+	color: #555;
+}
+.words-2{
+	text-align: center;
+	color: #555;
+	font-size: 14px;
+	margin-top: 14px;
+}
+.words-3{
+	font-size: 12px;
+	color: #A5A4A4;
+	margin-top: 10px;
+	padding-bottom: 40px;
+}
+.content-form{
+	margin: 42px auto 0;
+	width: 820px;
+}
+.search-k{
+	width: 820px;
+	height: 48px;
+	border-radius: 4px;
+	border: 1px solid #999;
+	padding-left: 14px;
+	font-size: 14px;
+}
+.search-b{
+	position: relative;
+}
+.btn{
+	width: 30px;
+	height: 40px;
+	background: url(../../img/servise/banner/c3.png) no-repeat center center;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	cursor: pointer;
+	border: 0;
+	border-left: none;
+}
+/* 产品获取支持 */
+.product{
+	margin-top: 40px;
+}
+.words-4{
+	text-align: center;
+}
+.links{
+	color: rgba(0,0,255,0.7);
+	font-size: 15px;
+}
+.choice{
+	width: 960px;
+	margin: 0 auto;
+}
+.choice>div{
+	width: calc(100%) / 5;
+	height: 120px;
+}
+.choice>div>div{
+	width: 165px;
+	height: 120px;
+	margin-left: 20px;
+}
+.choice .clean>div:hover{
+	border: 1px solid #0066EE;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.choice .clean>div p:hover{
+	color: #0066EE;
+}
+.choice .clean>div>div{
+	margin: 10px auto;
+}
+.choice .clean>div p{
+	text-align: center;
+	margin-top: 17px;
+	font-size: 14px;
+	color: #333;
+}
+.tupian1{
+	width: 66px;
+	height: 62px;
+}
+.tupian2{
+	width: 37px;
+	height: 60px;
+}
+.tupian3{
+	width: 66px;
+	height: 62px;
+}
+.tupian4{
+	width: 57px;
+	height: 60px;
+}
+.tupian5{
+	width: 60px;
+	height: 60px;
+}
+.tupian6{
+	width: 36px;
+	height: 58px;
+}
+.tupian7{
+	width: 66px;
+	height: 50px;
+}
+.tupian8{
+	width: 40px;
+	height: 56px;
+}
+.tupian9{
+	width: 50px;
+	height: 56px;
+}
+.tupian10{
+	width: 40px;
+	height: 65px;
+}
+.tupian11{
+	width: 66px;
+	height: 60px;
+}
+/* 帮助与支持 */
+.help{
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 30px;
+}
+.help ul{
+	margin: 44px auto 0;
+}
+.help ul li{
+	width: 192px;
+	height: 118px;
+	text-align: center;
+}
+.help ul li div img{
+	width: 40px;
+	height: 40px;
+}
+.help ul li p{
+	margin-top: 10px;
+	font-size: 12px;
+	color: #999;
+}
+.help ul li div{
+	margin: 0 auto;
+}
+.help ul li div .share{
+	width: 54px;
+	height: 40px;
+}
+/* 联想服务站 */
+.package{
+	width: 840px;
+	height: 180px;
+	margin: 30px auto 0;
+}
+.package img{
+	width: 40%;
+	height: 180px;
+}
+.search-station{
+	margin-top: 36px;
+}
+.text{
+	width: 462px;
+	height: 168px;
+}
+.name-text span{
+	font-size: 24px;
+	color: #333;
+}
+.name-text a{
+	color: rgba(0,0,255,0.8);
+	margin-top: 14px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.name-text1 {
+	font-size: 14px;
+	color: #666;
+	margin-top: 14px;
+}
+.label{
+	color: #3E8DDD;
+	font-size: 14px;
+	line-height: 35px;
+}
+/* 增值服务 */
+.increment{
+	padding-top: 40px;
+	margin-top: 40px;
+	border-top: 1px solid #ddd;
+}
+.increment ul li{
+	width: 192px;
+	height: 118px;
+	text-align: center;
+}
+.increment ul li .last-words{
+	line-height: 25px;
+}
+.increment-k{
+	margin-top: 40px;
+}
+.increment1{
+	width: 41px;
+	height: 41px;
+}
+.increment2{
+	width: 44px;
+	height: 40px;
+}
+.increment3{
+	width: 38px;
+	height: 43px;
+}
+.increment4{
+	width: 48px;
+	height: 48px;
+}
+.increment5{
+	width: 45px;
+	height: 45px;
+}
+.increment6{
+	width: 53px;
+	height: 48px;
+}
+/* 联想电脑管家 */
+.housekeeper{
+	width: 1200px;
+	height: 100%;
+	margin-top: 20px;
+}
+.housekeeper-b{
+	height: 180px;
+	background: url(../../img/servise/guanjia/housekeeper.png) no-repeat center center;
+	background-size: cover;
+}
+/* 问题解决方案 */
+.solve{
+	height: 100%;
+	margin-top: 20px;
+}
+.solve ul{
+	width: 720px;
+	margin: 30px auto;
+}
+.solve ul li{
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	color: #666;
+}
+.solve ul li .problem{
+	color: #63abed;
+	font-size: 14px;
+}
+/* 页脚 */
+.footer{
+	background-color: #f2f2f2;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 373px;
+	padding-bottom: 20px;
+}
+.footer ul{
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer ul li{
+	float: left;
+	margin-left: 30px;
+	margin-top: 70px;
+}
+.footer ul li>p{
+	color: #333;
+	font-size: 14px;
+}
+.footer ul li>div{
+	color: #666;
+	font-size: 12px;
+	margin-top: 12px;
+}
+.footer ul li>div p a{
+	color: #666;
+	line-height: 25px;
+}
+.btn2{
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #CD5C5C;
+	color: white;
+	border-radius: 3px;
+	margin-left: 3px;
+}
+.contact{
+	width: 200px;
+	display: inline-block;
+	margin-top: 70px;
+	margin-left: 50px;
+}
+.contact .one{
+	font-size: 14px;
+	color: #333;
+	margin-left: 39px;
+}
+.contact .two{
+	font-size: 12px;
+	color: #666;
+	margin-top: 14px;
+}
+.contact img{
+	width: 100px;
+	margin-top: 28px;
+	margin-left: 23px;
+}
+/* 版权 */
+.copyright{
+	height: 75px;
+	background-color: #F2F2F2;
+	margin: 0 auto;
+}
+.copyright p{
+	text-align: center;
+	line-height: 75px;
+	color: #333;
+}
+.copyright p>span{
+	margin-left: 50px;
+}
+/* 固定 */
+.fixed{
+	width: 100%;
+	height: 55px;
+	background: url(../../img/servise/guding/tc.png) no-repeat;
+	background-size: 127px 55px;
+	position: fixed;
+	left: 1220px;
+	bottom: 50px;
+	z-index: 999;
+	cursor: pointer;
+}

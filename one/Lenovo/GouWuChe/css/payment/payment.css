@@ -1,0 +1,600 @@
+@charset "utf-8";
+/* 背景图 */
+.bg-img {
+	width: 100%;
+	height: 100%;
+	background: url(../../img/payment/neirong/beijing.jpg) no-repeat center top;
+	background-size: cover;
+}
+
+/* 头部 */
+.header {
+	height: 49px;
+	border-bottom: 1px solid #ccc;
+}
+
+.header-logo img {
+	width: 147px;
+	height: 49px;
+}
+
+.container .core {
+	font-size: 20px;
+	color: #000000;
+	line-height: 49px;
+	margin-left: 12px;
+}
+
+.container ul li .nav {
+	line-height: 49px;
+	font-size: 12px;
+	padding-right: 15px;
+	color: #000;
+}
+
+/* 收货地址 */
+.colour {
+	background-color: #fff;
+	width: 1200px;
+	height: 100%;
+	margin-top: 36px;
+	padding-top: 36px;
+	padding-left: 34px;
+	box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.colour p {
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.colour .new {
+	width: 100%;
+	height: 100%;
+	margin-top: 21px;
+	cursor: pointer;
+}
+
+.colour .new .new-add {
+	width: 273px;
+	height: 184px;
+	border: 1px solid #e2e2e2;
+	position: relative;
+	margin-left: 10px;
+}
+
+.colour .new .new-add:hover {
+	border: 1px solid #999;
+}
+
+.colour .new .new-add div {
+	width: 30px;
+	height: 30px;
+	background: url(../../img/payment/dizhi/addAffressBtnGrey.png) no-repeat;
+	margin: 70px auto;
+	background-size: cover;
+}
+
+.colour .new .new-add p {
+	text-align: center;
+	font-size: 14px;
+	color: #b3b3b3;
+	position: absolute;
+	top: 110px;
+	left: 100px;
+}
+.selected-box{
+	width: 273px;
+	height: 184px;
+	border: 1px solid red;
+	cursor: pointer;
+	display: none;
+}
+.coustomer,
+.phone-num,
+.address-info{
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.coustomer{
+	font-size: 18px;
+	color: #000;
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+.address-info{
+	width: 223px;
+	height: 42px;
+	margin-top: 2px;
+}
+/* 收货地址弹出层 */
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 9998;
+	display: none;
+}
+.new-address{
+	width: 662px;
+	height: 430px;
+	background-color: #fff;
+	position: fixed;
+	top:90px;
+	left: 25%;
+	z-index: 9999;
+}
+.dizhi{
+	height: 57px;
+	line-height: 57px;
+	font-size: 18px;
+	color: #434242;
+	padding: 0 24px;
+	border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+.close{
+	width: 24px;
+	height: 24px;
+	background: url(../../img/payment/dizhi/layerClose.png) no-repeat;
+	background-size: 24px 24px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+.address-box{
+	margin-top: 40px;
+}
+.information{
+	width: 590px;
+	margin: 0 auto;
+}
+.information .name{
+	position: relative;
+}
+.information .name input{
+	width: 280px;
+	height: 40px;
+}
+.tell input{
+	width: 280px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+.information-name{
+	position: absolute;
+	top: 0;
+	left: 17px;
+	font-size: 16px;
+}
+.star{
+	color: red;
+	line-height: 40px;
+	width: 20px;
+	height: 10px;
+	background-color: #fff;
+}
+.tell{
+	position: relative;
+}
+.address-pro{
+	margin-top: 14px;
+	position: relative;
+}
+.slect-title{
+	width: 588px;
+	height: 42px;
+	border: 1px solid #ccc;
+}
+.address-det .det-title{
+	width: 588px;
+	height: 64px;
+	margin-top: 14px;
+	position: relative;
+}
+.address-title{
+	position: absolute;
+	bottom: 180px;
+	left: 55px;
+	font-size: 16px;
+}
+
+.row{
+	margin-top: 40px;
+	position: relative;
+}
+.default{
+	color: #000;
+	position: absolute;
+	top: -2px;
+	left: 20px;
+}
+.address-btn{
+	width: 360px;
+	margin: 30px auto;
+}
+.cancel-btn{
+	background-color: #969696;
+	width: 160px;
+	height: 40px;
+	border: none;
+	color: white;
+	font-size: 16px;
+}
+.prese-btn{
+	background-color: #df2625;
+	margin-left: 10px;
+	font-size: 16px;
+	width: 160px;
+	height: 40px;
+	border: none;
+}
+.modify{
+	color: red;
+	float: right;
+	margin-right: 5px;
+}
+.modify2{
+	color: red;
+	float: right;
+	margin-right: 5px;
+}
+
+
+/* 支付方式 */
+.payment {
+	padding-top: 36px;
+}
+
+.on-line {
+	width: 100px;
+	height: 28px;
+	border: 1px solid red;
+	/* margin-top: 21px; */
+	cursor: pointer;
+}
+
+.on-line p {
+	font-size: 12px;
+	line-height: 28px;
+	text-align: center;
+	color: red;
+}
+
+/* 送货清单 */
+.detailed {
+	padding-top: 36px;
+}
+
+.detailed .detailed-list {
+	margin-bottom: 21px;
+}
+
+.shopp-cart {
+	font-size: 14px;
+	color: #757575;
+	cursor: pointer;
+	margin-right: 30px;
+}
+
+.shopp-cart:hover {
+	color: red;
+}
+
+/* 送货清单 */
+.detailed{
+	width: 1132px;
+	height: 100%;
+}
+.delivery {
+	width: 1132px;
+	height: 100%;
+	background-color: #f7f7f7;
+	border: 1px solid #e9e9e9;
+	padding-left: 16px;
+	position: relative;
+}
+.delivery .mode{
+	font-size: 14px;
+	color: #000;
+	width: 90px;
+	display: inline-block;
+	margin-top: 20px;
+}
+.delivery .result {
+	width: 782px;
+	background-color: #fff;
+	float: right;
+	padding: 24px;
+	height: 215px;
+	border-left: 1px solid #E9E9E9;
+}
+.result img{
+	width: 115px;
+	height: 115px;
+}
+.express{
+	position: absolute;
+	top: 50px;
+}
+.delivery table tr td{
+	font-size: 16px;
+}
+.nameA{
+	width: 320px;
+	color: #000;
+	padding-right: 220px;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 16px;
+}
+.nameB{
+	color: red;
+	font-size: 16px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.numberA{
+	margin-top: 25px;
+}
+.retreat{
+	width: 140px;
+	height: 14px;
+	background: url(../../img/payment/qingdan/sevenDay.png) no-repeat left center;
+	background-size: 14px 14px;
+	margin-top: 90px;
+	margin-left: 135px;
+	color: #1B759B;
+	padding-left: 20px;
+}
+/* 发票信息 */
+.invoice-box{
+	padding-top: 36px;
+}
+.invoice li{
+	margin-right: 20px;
+}
+.invoice li .modify{
+	color: red;
+}
+.invoice{
+	margin-top: 21px;
+}
+/* 优惠券 */
+.lcon{
+	width: 18px;
+	height: 18px;
+	background: url(../../img/payment/fapiao/subtractionBtn.png) no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+.discount{
+	margin-bottom: 16px;
+}
+.discount .use{
+	font-size: 18px;
+	color: #3c3c3c;
+	line-height: 14px;
+	margin-left: 5px;
+}
+.tips{
+	margin-left: 16px;
+	font-size: 12px;
+	color: #757575;
+	position: relative;
+}
+.tips a{
+	color: red;
+}
+.tips img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 1px;
+	cursor: pointer;
+}
+.discount-box{
+	width: 1166px;
+	border: 1px solid #e9e9e9;
+}
+.discount-box .discount-top{
+	width: 100%;
+	height: 42px;
+	background-color: #f7f7f7;
+}
+.discount-box .discount-top li{
+	line-height: 42px;
+	font-size: 14px;
+	padding: 0 33px;
+	cursor: pointer;
+}
+.discount-top .selected{
+	background-color: #fff;
+	color: red;
+}
+.discount-box .discount-top .notice{
+	position: relative;
+}
+.discount-box .discount-top .notice img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 14px;
+	cursor: pointer;
+}
+/* 优惠券 */
+.available{
+	width: 1064px;
+	height: 246px;
+	background-color: #fff;
+	margin: 0 auto;
+	display: block;
+}
+.available span{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	margin-right: 100px;
+	cursor: pointer;
+}
+.available-cou{
+	color: #FF0000;
+	border-bottom: 1px solid #FF0000;
+}
+/* 优惠码 */
+.discount-counet{
+	width: 1064px;
+	margin: 0 auto;
+	height: 100px;
+	display: none;
+}
+.discount-counet input{
+	width: 240px;
+	height: 28px;
+	margin-top: 42px;
+}
+.discount-counet button{
+	border: none;
+	background-color: #DF2625;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	margin-top: 42px;
+}
+/* 乐豆 */
+.lohas{
+	width: 1064px;
+	margin: 0 auto;
+	height: 100px;
+	display: none;
+}
+.lohas p{
+	height: 17px;
+	margin-top: 20px;
+	font-size: 12px;
+	color: #a5a5a5;
+	margin: 20px 0 5px;
+}
+.lohas p i{
+	color: #FF0000;
+	font-style: normal;
+}
+.lohas input{
+	width: 240px;
+	height: 28px;
+}
+.lohas button{
+	border: none;
+	background-color: #DF2625;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+}
+/* 订单备注 */
+.manager{
+	margin-top: 21px;
+}
+.currency{
+	font-size: 12px;
+	color: #2f2f2f;
+}
+.manager input{
+	width: 294px;
+	height: 28px;
+	border: 1px solid #E2E2E2;
+	font-size: 12px;
+	padding: 0 10px;
+}
+.order{
+	margin-top: 24px;
+}
+.order textarea{
+	width: 652px;
+	height: 82px;
+	padding: 0 10px;
+	resize: none;
+	vertical-align: top;
+	border: 1px solid #e2e2e2;
+}
+/* 最后结算 */
+.settlement{
+	margin-top: 50px;
+	text-align: right;
+	margin-right: 34px;
+	border-bottom: 1px solid #efefef;
+}
+.agreement-title{
+	font-size: 12px;
+	color: #757575;
+	margin-right: 34px;
+}
+.agreement-title a:hover{
+	color: red;
+}
+.settlement ul li{
+	margin-bottom: 16px;
+}
+.settlement ul li span{
+	font-size: 14px;
+	color: #000;
+}
+.settlement ul li span .jine{
+	color: #000;
+	font-weight: bold;
+}
+.settlement ul li span i{
+	color: #FF0000;
+	font-style: normal;
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.settlement ul li span .total-price{
+	font-size: 24px;
+	color: #DF2625;
+	font-weight: bold;
+}
+/* 提交 */
+.submitBtn{
+	display: inline-block;
+	width: 156px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	margin-right: 34px;
+	color: #fff;
+	background-color: #df2625;
+	cursor: pointer;
+}
+.footer-bottom {
+	height: 46px;
+	background-color: #272727;
+	color: #ccc;
+	margin-top: 60px;
+}
+.footer-bottom ul li,
+.footer-bottom ul li a,
+.footer-bottom ul span{
+	line-height: 46px;
+	color: #ccc;
+	margin-left: 5px;
+}
+.settlement-btn div{
+	margin-top: 20px;
+}
+.settlement-btn .xin-xi,
+.settlement-btn .di-zhi{
+	font-size: 14px;
+	color: #757575;
+}

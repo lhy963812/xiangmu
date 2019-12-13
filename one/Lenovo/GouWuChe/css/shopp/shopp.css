@@ -1,0 +1,535 @@
+@charset "utf-8";
+/* 头部 */
+.top-nav{
+	height: 38px;
+	background-color: #000;
+}
+.container ul{
+}
+.container ul .login{
+	float: right;
+	height: 16px;
+	border-right: 1px solid #fff;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.container ul .home{
+	float: right;
+	height: 16px;
+	border-right: 2px solid #fff;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+.container ul li a{
+	color: white;
+	font-size: 13px;
+}
+.container ul li a:hover{
+	color: orangered;
+}
+/* 登录弹出层 */
+.mask{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 9998;
+	display: none;
+}
+.sgin{
+	width: 580px;
+	height: auto;
+	margin-left: -290px;
+	background-color: #fff;
+	position: fixed;
+	top:90px;
+	left: 50%;
+	z-index: 9999;
+}
+.sgin-close{
+	width: 50px;
+	height: 50px;
+	background: url(../../img/shopp/tanchu/guanbi.png) no-repeat;
+	position: absolute;
+	right: -66px;
+	top: -28px;
+	cursor: pointer;
+}
+.wechat{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.wechat:hover{
+	opacity: 1;
+}
+.member-title{
+	margin-top: 60px;
+	font-size: 30px;
+	color: #7c7c7c;
+	text-align: center;
+}
+.input-box{
+	width: 330px;
+	margin: 30px auto;
+}
+.txt,
+.pass{
+	width: 330px;
+	height: 46px;
+	margin-bottom: 14px;
+}
+.automatic{
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+	line-height: 10px;
+}
+.sign-btn{
+	height: 50px;
+	width: 330px;
+	color: #fff;
+	background-color: #e22319;
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+	border: none;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.quick,
+.quick:hover{
+	color: #ef1c22;
+	font-size: 14px;
+}
+.forget,
+.register{
+	font-size: 14px;
+	color: #757575;
+	padding: 0 5px;
+}
+.forget:hover,
+.register:hover{
+	color: red;
+}
+.other{
+	margin-top: 40px;
+}
+.other span{
+	width: 123px;
+	height: 1px;
+	background-color: #a4a3a3;
+	margin-top: 9px;
+}
+.other-sign{
+	font-size: 14px;
+	color: #8c8c8c;
+}
+.other-mode{
+	margin-top: 15px;
+	padding: 0 25px;
+}
+.other-mode a{
+	margin-left: 30px;
+}
+.sgin-wechat{
+	display: none;
+}
+.wechat-title{
+	text-align: center;
+	font-size: 14px;
+	color: #424242;
+	line-height: 14px;
+	margin-top: 20px;
+}
+.wechat-img{
+	width: 250px;
+	height: 350px;
+	margin: 0 auto;
+	background: url(../../img/shopp/tanchu/show.jpg) no-repeat center;
+}
+.pc-img{
+	width: 63px;
+	height: 59px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.pc-img:hover{
+	opacity: 1;
+}
+
+
+/* logo */
+.logo-fixed{
+	padding: 30px 0;
+}
+.logo .container .logo-1{
+	width: 180px;
+	height: 38px;
+}
+.logo-2{
+	width: 333px;
+	height: 42px;
+}
+/* 购物车 */
+.bc-table table{
+	width: 100%;
+	border: 1px solid #d9d8d6;
+}
+.bc-table table tr td{
+	height: 36px;
+	line-height: 36px;
+	font-weight: normal;
+	font-size: 15px;
+	background-color: #f8f8f8;
+	text-align: center;
+	color: #000;
+}
+.empty{
+	padding: 80px 0 80px 336px;
+	width: 600px;
+	display: none;
+}
+.empty h3{
+	height: 84px;
+	line-height: 84px;
+	padding-left: 110px;
+	background: url(../../img/shopp/gouwuche/buycart.png)no-repeat -4px;
+	font-size: 18px;
+	color: #000;
+}
+.choose-box{
+	margin: 27px 0 0 10px;
+	width: 210px;
+}
+.choose-btn{
+	display: inline-block;
+	width: 95px;
+	height: 38px;
+	line-height: 45px;
+	background: url(../../img/shopp/gouwuche/buycart2.png) no-repeat center;
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	margin: -8px 4px;
+}
+.choose-btn:hover{
+	color: #000;
+}
+.bc-nopro{
+	padding: 10px 0;
+}
+.bc-nopro h3{
+	height: 100%;
+	line-height: 84px;
+	font-size: 18px;
+	color: #000;
+	font-weight: normal;
+	padding-left: 480px;
+	background: url(../../img/shopp/gouwuche/buycart.png) no-repeat 360px;
+}
+.bc-btn a{
+	display: inline-block;
+	width: 95px;
+	height: 68px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	line-height: 75px;
+	margin: 5px 15px;
+	background: url(../../img/shopp/gouwuche/buycart2.png) no-repeat;
+}
+.commodity{
+	height: 116px;
+	border: 1px solid #d9d8d6;
+}
+.commodity tr td{
+	text-align: center;
+}
+.com-img img{
+	width: 115px;
+	height: 115px;
+	margin-left: 70px;
+}
+.frame{
+	text-align: center;
+}
+.frame input{
+	text-align: center;
+}
+.price{
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+}
+.textbox{
+	width: 54px;
+	height: 20px;
+}
+.reduce{
+	width: 24px;
+	height: 24px;
+}
+.plus{
+	width: 24px;
+	height: 24px;
+}
+.money{
+	color: red;
+	font-size: 14px;
+	text-align: center;
+}
+.operation a{
+	font-size: 14px;
+	color: #000;
+}
+.payment-box{
+	padding: 14px 18px;
+	border: 1px solid #D9D8D6;
+	background-color: #f8f8f8;
+	margin-top: 10px;
+	display: block;
+}
+.payment-box span{
+	font-size: 13px;
+	color: #000;
+}
+.payment-box a{
+	font-size: 13px;
+	color: #000;
+	margin-left: 9px;
+}
+.payment-box a:hover{
+	color: red;
+}
+.payment-box ul li{
+	font-size: 16px;
+	color: #000;
+}
+.dete-btn{
+	height: 40px;
+	padding: 15px 0 55px 0;
+	display: block;
+}
+.dete-btn a{
+	width: 160px;
+	height: 38px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	font-size: 20px;
+	background-color: #e2231a;
+	border-radius: 3px;
+}
+
+
+
+/* 推荐 */
+.title{
+	height: 41px;
+	background-color: #eee;
+	border: 1px solid #d9d8d6;
+}
+.title .frame{
+	display: block;
+	width: 2px;
+	height: 16px;
+	background-color: red;
+	margin: 13px 8px 0 15px;
+}
+.title span{
+	font-size: 14px;
+	color: #000;
+	line-height: 41px;
+	font-weight: bold;
+}
+.wheel{
+	height: 330px;
+	border: 1px solid #d9d8d6;
+	border-top: none;
+}
+.swiper-slide img{
+	width: 216px;
+	height: 216px;
+}
+.planting div{
+	width: 984px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+}
+.planting div img{
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.planting div span{
+	font-size: 13px;
+	color: #0f0f0f;
+}
+.planting div .title1{
+	position: absolute;
+	left: 20px;
+	bottom: 50px;
+}
+.planting div .price1{
+	position: absolute;
+	left: 20px;
+	bottom: 25px;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+.planting div .title2{
+	position: absolute;
+	left: 270px;
+	bottom: 67px;
+}
+.planting div .price2{
+	position: absolute;
+	left: 270px;
+	bottom: 25px;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+.planting div .title3{
+	position: absolute;
+	left: 520px;
+	bottom: 67px;
+}
+.planting div .price3{
+	position: absolute;
+	left: 520px;
+	bottom: 25px;
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+.planting div .title4{
+	position: absolute;
+	left: 720px;
+	bottom: 49px;
+}
+.planting div .price4{
+	position: absolute;
+	left: 720px;
+	bottom: 25px;
+	font-size: 14px;
+	color:red;
+	font-weight: bold;
+}
+.planting div .title5{
+	position: absolute;
+	left: 270px;
+	bottom: 50px;
+}
+.planting div .title6{
+	position: absolute;
+	left: 520px;
+	bottom: 50px;
+}
+.planting div .title7{
+	position: absolute;
+	left: 750px;
+	bottom: 66px;
+}
+.planting div .price5{
+	position: absolute;
+	left: 750px;
+	bottom: 25px;
+	font-size: 14px;
+	color:red;
+	font-weight: bold;
+}
+/* 服务列表 */
+.list{
+	background-color: #f5f5f5;
+	height: 85px;
+	border-top: 1px solid #ececec;
+	margin-top: 40px;
+}
+/* 页脚 */
+.footer{
+	background-color: #fff 
+}
+.footer ul{
+	height: 140px;
+	padding-top: 10px;
+}
+.footer ul li div{
+	margin-top: 8px;
+}
+.footer ul li p{
+	color: #000;
+	font-size: 14px;
+	padding: 0 124px 0 0;
+}
+.footer ul li div p a{
+	color: #555;
+	line-height: 22px;
+	font-size: 12px;
+}
+.footer ul li div p a:hover{
+	color: #000;
+}
+.about{
+	border: none;
+}
+.about>div{
+	position: relative;
+}
+.about>div>.footer-about{
+	margin-top: 30px;
+	margin-left: 160px;
+}
+.about>div>.footer-about span{
+	margin: 0 8px;
+}
+.about>div>.footer-about a{
+	color: #6f7170;
+	font-size: 12px;
+}
+.region{
+	margin-right: 60px;
+	color: #000000;
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+.chart{
+	width: 123px;
+	height: 20px;
+	background: url(../../img/shopp/yejiao/xuebitu3.png) no-repeat center;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+.copyright{
+	margin-left: 100px;
+	margin-top: 8px;
+}
+.copyright span{
+	margin: 0 15px;
+}
+.copyright a:hover{
+	color: #666;
+}
+.copyright a{
+	position: relative;
+}
+.copyright a img{
+	position: absolute;
+	top: 0px;
+	left: -15px;
+}

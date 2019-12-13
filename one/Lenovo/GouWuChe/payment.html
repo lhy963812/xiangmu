@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>结算中心</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/payment/payment.css" />
+		<script src="js/jquery/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/payment/payment.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 背景图 -->
+		<div class="bg-img">
+			<!-- 头部 -->
+			<div class="header">
+				<div class="container">
+					<div class="header-logo fl">
+						<img src="img/payment/toubu/logo.png">
+					</div>
+					<span class="core">结算中心</span>
+					<ul class="fr clearfix">
+						<li class="fr">
+							<a href="" class="nav">| 退出</a>
+						</li>
+						<li class="fr">
+							<a href="../XiangQingYe/user.html" class="nav">| 我的订单</a>
+						</li>
+						<li class="fr">
+							<a href="../XiangQingYe/user.html" class="nav">| 用户</a>
+						</li>
+						<li class="fr">
+							<a href="../ShouYe/firstpage.html" class="nav">返回首页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="content">
+				<div class="container">
+					<!-- 收货地址 -->
+					<div class="colour">
+						<p>收货地址</p>
+						<ul class="clearfix new">
+							<li class="selected-box fl">
+								<p class="coustomer"></p>
+								<p class="phone-num"></p>
+								<p class="address-info"></p>
+							</li>
+							<li class="new-add fl">
+								<div class="add"></div>
+								<p>添加新地址</p>
+							</li>
+						</ul>
+						<!-- 收货地址弹出层 -->
+						<div class="mask">
+							<div class="new-address">
+								<p class="dizhi">添加新地址</p>
+								<div class="close"></div>
+								<div class="address-box">
+									<div class="information clearfix">
+										<div class="name fl">
+											<input type="text" style="outline:none" class="full">
+											<div class="information-name">
+												<span class="star">*</span>姓名
+											</div>
+										</div>
+										<div class="tell fr">
+											<input type="text" style="outline:none" class="phone">
+											<div class="tell-name information-name">
+												<span class="star">*</span>手机号
+											</div>
+										</div>
+									</div>
+									<div class="address-pro information">
+										<input type="text" class="slect-title" placeholder="请输入省/市/区/街道"/>
+									</div>
+									<div class="address-det information">
+										<input type="text" class="det-title">
+										<div class="address-title">
+											<span class="star">*</span>详细地址
+										</div>
+									</div>
+									<div class="row information">
+										<div>
+											<input type="checkbox"><span class="default">设为默认地址</span>
+										</div>
+									</div>
+								</div>
+								<div class="address-btn">
+									<button type="button" class="cancel-btn">取消</button>
+									<button type="button" class="prese-btn cancel-btn">保存</button>
+								</div>
+							</div>
+						</div>
+						<!-- 支付方式 -->
+						<div class="payment">
+							<p>支付方式</p>
+							<div class="on-line">
+								<p>在线支付</p>
+							</div>
+						</div>
+						<!-- 送货清单 -->
+						<div class="detailed">
+							<p class="clearfix detailed-list">送货清单<span class="shopp-cart fr">返回修改购物车</span></p>
+							<div class="delivery clearfix">
+								<p class="mode fl">配送方式</p>
+								<div class="on-line fl express">
+									<p>快递配送</p>
+								</div>
+								<div class="fl result clearfix">
+								</div>
+							</div>
+						</div>
+						<!-- 发票 -->
+						<div class="invoice-box">
+							<p class="infor">发票信息</p>
+							<ul class="invoice clearfix">
+								<li class="fl">电子发票</li>
+								<li class="fl">个人</li>
+								<li class="fl">商品明细</li>
+								<li class="fl"><a href="" class="modify">修改></a></li>
+							</ul>
+						</div>
+						<!-- 优惠券 -->
+						<div class="invoice-box discount clearfix">
+							<div class="lcon fl"></div>
+							<span class="use">使用优惠</span>
+							<span class="tips">温馨提示：亲，若您在使用优惠券、优惠码、代金券、乐豆时遇到问题，可
+								<a href="">咨询客服解决</a>
+								<img src="img/payment/fapiao/introducte.png" >
+							</span>
+						</div>
+						<div class="discount-box">
+							<ul class="discount-top clearfix">
+								<li class="selected fl">优惠券</li>
+								<li class="discount-code fl">优惠码</li>
+								<li class="ledou fl">乐豆</li>
+								<li class="notice fr"><img src="img/payment/fapiao/introductecopen.png" >优惠劵码须知</li>
+							</ul>
+							<!-- 优惠券 -->
+							<div class="available">
+								<span class="available-cou">可用优惠券(0)</span>
+								<span class="no-available">不可用优惠券(0)</span>
+							</div>
+							<!-- 优惠码 -->
+							<div class="discount-counet">
+								<input type="text" placeholder="请输入优惠码">
+								<button type="button">立即使用</button>
+							</div>
+							<!-- 乐豆 -->
+							<div class="lohas">
+								<p>账户共<i>0</i>乐豆，此单可用<i>1100</i>乐豆，抵<i>￥11</i></p>
+								<input type="text" placeholder="请输入100的整数">
+								<button type="button">立即使用</button>
+							</div>
+						</div>
+						<div class="order-box">
+							<p class="invoice-box remarks">订单备注</p>
+							<div class="manager">
+								<span class="currency">客服经理编码：</span>
+								<input type="text" placeholder="如果您联系过客服,可以填写其编码"/>
+							</div>
+							<div class="order">
+								<span class="currency">订单备注：</span>
+								<textarea type="textarea" placeholder="告诉我您的特殊要求,限100字"></textarea>
+							</div>
+						</div>
+						<!-- 最后结算 -->
+						<div class="settlement">
+							<p class="agreement">
+								<input type="checkbox" checked="checked">
+								<span class="agreement-title">我同意<a href="">《联想产品网络营销通用条款和条件》</a></span>
+							</p>
+							<ul>
+								<li>
+									<span><i>1</i>件商品</span>
+									<span>商品金额: <i class="jine">￥</i></span>
+								</li>
+								<li>
+									<span>优惠：<i>-￥0.00</i></span>
+								</li>
+								<li>
+									<span>运费：<i>+￥0.00</i></span>
+								</li>
+								<li>
+									<span>实付款：<i class="total-price">￥</i></span>
+									<div>
+										<div></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="settlement-btn clearfix">
+							<!-- 底部的地址 -->
+							<div>
+								<p class="xin-xi">
+									<span class="xingming"></span>
+									<span class="dianhua"></span>
+								</p>
+								<p class="di-zhi">
+									<span class="xiangxi"></span>
+								</p>
+							</div>
+							<span class="submitBtn fr">提交订单</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 页脚 -->
+			<div class="footer-bottom">
+				<div class="container clearfix">
+					<div class="fl">
+						<ul class="clearfix">
+							<li class="fl">版权所有：1998-2019 联想集团</li>
+							<span class="fl">|</span>
+							<li class="fl"><a href="">法律公告</a></li>
+							<span class="fl">|</span>
+							<li class="fl"><a href="">隐私保护</a></li>
+							<span class="fl">|</span>
+							<li class="fl"><a href="">产品安全</a></li>
+						</ul>
+					</div>
+					<div class="fr">
+						<ul class="clearfix">
+							<li class="fr"><a href="">京ICP备11035381</a></li>
+							<span class="fr">|</span>
+							<li class="fr">京公网安备110108007970号</li>
+							<span class="fr">|</span>
+							<li class="fr"><a href="">营业执照：110000410127232</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

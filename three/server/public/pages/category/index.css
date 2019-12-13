@@ -1,0 +1,157 @@
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+/* 头部 */
+.header {
+	height: 45px;
+	flex-shrink: 0;
+	background-color: #e8e8e8;
+	display: flex;
+}
+.header>a:first-child{
+	float: left;
+	flex-shrink: 0;
+	margin-left: 15px;
+	font-size: 30px;
+	color: #666;
+	width: 40px;
+	height: 40px;
+	line-height: 45px;
+}
+.header>h6{
+	flex-grow: 1;
+	display: inline-block;
+	text-align: center;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: normal;
+}
+.header>a:last-child{
+	float: right;
+	flex-shrink: 0;
+	margin-left: 15px;
+	font-size: 35px;
+	color: #666;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+/* 导航 */
+.nav{
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	display: none;
+	position: absolute;
+	top: 45px;
+	background-color: rgba(255,255,255,0.8);
+}
+.nav>a{
+	color: #333;
+	width: 80px;
+	display: inline-block;
+}
+.nav>a>i{
+	
+}
+.nav>a>span{
+	vertical-align: middle;
+}
+.nav>a>i>img{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	background-size: cover;
+}
+/* 内容 */
+.content {
+	flex-grow: 1;
+	display: flex;
+	overflow: hidden;
+	align-items: stretch;
+	border-bottom: 1px solid #b0b0b0;
+}
+
+.lft {
+	width: 100px;
+	overflow: auto;
+	flex-shrink: 0;
+	background-color: #E8E8E8;
+}
+
+ul.list-main>li {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-size: 13px;
+
+}
+
+ul.list-main>li>span {
+	height: 24px;
+	border-radius: 12px;
+	text-align: center;
+	line-height: 24px;
+}
+
+ul.list-main li.active{
+	background-color: #fff;
+}
+
+.rgt {
+	flex-grow: 1;
+	overflow: auto;
+	padding: 10px;
+}
+img.avatar{
+	width: 100%;
+	border-radius: 6px;
+}
+ul.list-sub-wrapper{
+	margin: 10px 0;
+}
+ul.list-sub-wrapper>li{
+	background-color: white;
+	margin-bottom: 10px;
+}
+ul.list-sub-wrapper>li>h3{
+	font-size: 13px;
+	color: #333;
+	font-weight: bold;
+}
+/* 三级分类样式 */
+ul.list-sub{
+	margin-right: -6px;
+}
+ul.list-sub>li{
+	box-sizing: border-box;
+	display: flex;
+	float: left;
+	width: 33.333333%;
+	padding-right: 6px;
+	margin-top: 10px;
+}
+ul.list-sub>li>a{
+	flex-grow: 1;
+	text-align: center;
+}
+ul.list-sub>li>a>img{
+	width: 100%;
+}
+ul.list-sub>li>a>span{
+	font-size: 11px;
+	color: #666;
+}
+/* 页脚 */
+.footer {
+	flex-shrink: 0;
+	font-size: 0;
+}

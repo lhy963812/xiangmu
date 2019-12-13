@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>联想商城 - 购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="js/lib/dist/css/swiper.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopp/shopp.css" />
+		<script src="js/jquery/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lib/dist/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopp/shopp.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div class="top-nav">
+			<div class="container">
+				<ul class="clean">
+					<li class="login"><a href="#">登录</a></li>
+					<li class="home"><a href="../ShouYe/firstpage.html">返回首页</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 登录弹出层 -->
+			<div class="mask">
+				<div class="sgin">
+					<div class="sgin-close"></div>
+					<div class="wechat"><img src="img/shopp/tanchu/qrcode.png" ></div>
+					<p class="member-title">联想会员登录</p>
+					<div class="input-box">
+						<input class="txt" type="text" placeholder="邮箱/手机号"><br>
+						<input class="pass" type="password" placeholder="密码"><br>
+						<input class="check" type="checkbox" checked="checked">
+						<span class="automatic">自动登录</span>
+						<div class="sign-in">
+							<button type="button" class="sign-btn">登录</button>
+						</div>
+						<a href="" class="quick">手机验证码快捷登录</a>
+						<a href="" class="forget fr">忘记密码</a>
+						<span class="fr">|</span>
+						<a href="../liuhongyong/regsiter.html" class="register fr">立即注册</a>
+						<div class="other clearfix">
+							<span class="fl"></span>
+							<p class="fl other-sign">其他登录方式</p>
+							<span class="fl"></span>
+						</div>
+						<div class="other-mode clearfix">
+							<a href="" class="fl"><img src="img/shopp/tanchu/qq.png" ></a>
+							<a href="" class="fl"><img src="img/shopp/tanchu/weibo.png" ></a>
+							<a href="" class="fl"><img src="img/shopp/tanchu/weixin.png" ></a>
+							<a href="" class="fl"><img src="img/shopp/tanchu/zhifubao.png" ></a>
+						</div>
+					</div>
+				</div>
+			<div class="sgin-wechat sgin">
+				<p class="member-title">联想会员扫码登录</p>
+				<p class="wechat-title">打开<strong>微信</strong>扫一扫</p>
+				<div class="wechat-img"></div>
+				<div class="pc-img"><img src="img/shopp/tanchu/pc.png" ></div>
+			</div>
+		</div>
+		<!-- logo -->
+		<div class="logo">
+			<div class="container logo-fixed">
+				<img src="img/shopp/logo/pic-13.jpg" class="logo-1">
+				<img src="img/shopp/logo/pic-12.jpg" class="logo-2 fr">
+			</div>
+		</div>
+		<!-- 购物车 -->
+		<div class="container clearfix">
+			<div class="bc-table">
+				<table>
+					<tr>
+						<td width="444px">商品</td>
+						<td width="168px">规格</td>
+						<td width="156px">单价</td>
+						<td width="156px">数量</td>
+						<td width="156px">金额</td>
+						<td width="119px">操作</td>
+					</tr>
+				</table>
+			</div>
+			<div class="empty clearfix">
+				<h3 class="fl">您的购物车暂无商品，您可以</h3>
+				<div class="choose-box fl">
+					<a href="../wangjing/homepage2.html" class="choose-btn">选购商品</a>
+				</div>
+			</div>
+			<div class="bc-nopro clearfix">
+				<table class="commodity">
+					<tr>
+						<td style="width: 57px;"><input type="checkbox" name="checkbox"></td>
+						<td style="width: 148px; height: 116px;" class="com-img"><a href=""><img src="img/ban01.jpg" ></a></td>
+						<td style="width: 257px; height: 116px;" class="com-title"><a href=""></a></td>
+						<td style="width: 163px; height: 116px;"></td>
+						<td style="width: 152px;" class="price"><span class="unit">0</span></td>
+						<td style="width: 152px;" class="frame">
+							<span>
+								<input type="button" value="-" class="reduce"/>
+								<input type="text" value="1" class="textbox">
+								<input type="button"value="+" class="plus">
+							</span>
+						</td>
+						<td style="width: 152px;" class="money"></td>
+						<td style="width: 117px" class="operation">
+							<a href="#" class="delete">删除</a><br>
+							<a href="#">移入收藏夹</a>
+						</td>
+					</tr>
+				</table>
+				<div class="payment-box clearfix">
+					<div class="fl">
+						<input type="checkbox" name="checkall"><span>全选</span>
+						<a href="#" class="all">删除选中的商品</a>
+					</div>
+					<ul class="fr">
+						<li class="unit-price">商品总价:<span>0</span></li>
+						<li>优惠节省：0.00</li>
+						<li class="total">合计：<span class="total"></span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dete-btn fr">
+				<a href="payment.html" class="pay">去结算</a>
+			</div>
+		</div>
+		<!-- 推荐 -->
+		<div class="container">
+			<div class="title clearfix">
+				<span class="frame fl"></span>
+				<span class="fl">为您推荐</span>
+			</div>
+			<div class="wheel">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide planting">
+							<div class="clearfix">
+								<img src="img/shopp/tuijian/yWchECQQJu7e4WllEQ9GPuaos-8834.jpg">
+								<span class="title1">ThinkPad X390 4G版 英特尔酷睿i5 <br>笔记本电脑 20Q0A00BCD</span>
+								<span class="price1">￥5499</span>
+								<img src="img/shopp/tuijian/C90DBFKsu64cGIszVWwHh5Ofn-4266.jpg" >
+								<span class="title2">联想Z6 青春版 4GB+64GB 骑士黑</span>
+								<span class="price2">￥999</span>
+								<img src="img/shopp/tuijian/JNtkElEN5qWmZzZM2UFosb7Fk-9246.jpg" >
+								<span class="title3">联想Z6 Pro 8GB+128GB 黑色</span>
+								<span class="price3">￥2599</span>
+								<img src="img/shopp/tuijian/nAakIfCor67sIrBNETay7zsTu-1892.jpg" >
+								<span class="title4">联想Z5 Pro GT 855版 6GB+128GB <br>碳纤黑</span>
+								<span class="price4">￥2398</span>
+							</div>
+						</div>
+						<div class="swiper-slide planting">
+							<div class="clearfix">
+								<img src="img/shopp/tuijian/BlYyKNadRWtMwqEbzVF2Vgmsj-0550.jpg">
+								<span class="title1">ThinkPad T490 英特尔酷睿i5 <br>笔记本电脑 20N2A004CD</span>
+								<span class="price1">￥9499.00</span>
+								<img src="img/shopp/tuijian/QA4QIX6F3ammXibeUCJvNLmzr-9612.jpg">
+								<span class="title5">拯救者 Y7000P 2019 英特尔酷睿i7 <br>15.6英寸专业电竞本 黑色</span>
+								<span class="price2">￥8099</span>
+								<img src="img/shopp/tuijian/mCgrY8TUpbl7Qz1MD78n3nFSR-9384.jpg">
+								<span class="price3">￥8499</span>
+								<span class="title6">拯救者 刃9000 3代 英特尔酷睿i7 <br>分体台式机 黑色</span>
+								<img src="img/shopp/tuijian/7pOYbLrVwsY2ZzAroo4Mvb4E5-3255.jpg">
+								<span class="title7">联想智能体脂秤</span>
+								<span class="price5">￥139</span>
+							</div>
+						</div>
+						<div class="swiper-slide planting">
+							<div class="clearfix">
+								<img src="img/shopp/tuijian/400ZmC6Dj6RPFrtvD2H8Q9NYF-0162.jpg">
+								<span class="title1">ThinkPad X390 4G版 英特尔酷睿i5 <br>笔记本电脑 20Q0A00BCD</span>
+								<span class="price1">￥7299</span>
+								<img src="img/shopp/tuijian/Yh5l39r868imKAFyVbET9aDvK-1655.jpg">
+								<span class="title5">ThinkPad X1 Carbon2019 LTE版英 <br>特尔酷睿i5笔记本电脑20QDA00PCD</span>
+								<span class="price2">￥10299</span>
+								<img src="img/shopp/tuijian/TcmhSAbX1YaUv7tlmdbmUF8rY-0061.jpg">
+								<span class="title3">thinkplus 口红电源适配器(黑)</span>
+								<span class="price3">￥249</span>
+								<img src="img/shopp/tuijian/ij7NsuFK1rqfLwhsIytIZHpO2-3864.jpg">
+								<span class="title4">thinkplus 口红电源适配器(雅典白) <br>限量款</span>
+								<span class="price4">￥299</span>
+							</div>
+						</div>
+					</div>
+					<!-- 如果需要导航按钮 -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 服务列表 -->
+		<div class="list">
+			<div class="container">
+				<img src="img/shopp/fuwu/CmBZEFZz7I-ADJipAABALgU8YUw364.jpg">
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<div class="container">
+			<div class="footer">
+				<ul class="clearfix">
+					<li class="fl">
+						<p>购物指南</p>
+						<div>
+							<p><a href="">服务商信息</a></p>
+							<p><a href="">购买流程</a></p>
+							<p><a href="">注册登录</a></p>
+						</div>
+					</li>
+					<li class="fl">
+						<p>配送方式</p>
+						<div>
+							<p><a href="">配送方式</a></p>
+							<p><a href="">配送方式信息</a></p>
+							<p><a href="">签收原则</a></p>
+							<p><a href="">物流查询</a></p>
+						</div>
+					</li>
+					<li class="fl">
+						<p>支付方式</p>
+						<div>
+							<p><a href="">支付方式</a></p>
+							<p><a href="">支付问题</a></p>
+							<p><a href="">分期支付</a></p>
+						</div>
+					</li>
+					<li class="fl">
+						<p>订单信息</p>
+						<div>
+							<p><a href="">订单信息</a></p>
+							<p><a href="">其他频道订单信息</a></p>
+							<p><a href="">手机频道订单信息</a></p>
+						</div>
+					</li>
+					<li class="fl">
+						<p>售后服务</p>
+						<div>
+							<p><a href="">Lenovo频道商品售后</a></p>
+							<p><a href="">手机频道商品售后7天</a></p>
+							<p><a href="">无理由退换货说明</a></p>
+						</div>
+					</li>
+					<li class="fl">
+						<p>其他说明</p>
+						<div>
+							<p><a href="">服务承诺</a></p>
+							<p><a href="">账户安全</a></p>
+							<p><a href="">产品安全</a></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about list">
+			<div class="container">
+				<div class="footer-about clearfix">
+					<a href="">关于联想</a>
+					<span>|</span>
+					<a href="">联系我们</a>
+					<span>|</span>
+					<a href="">新闻中心</a>
+					<span>|</span>
+					<a href="">工作机会</a>
+					<span>|</span>
+					<a href="">联想官网热搜榜</a>
+					<span>|</span>
+					<a href="">分类大全</a>
+					<span>|</span>
+					<a href="">联想产品大全</a>
+					<span>|</span>
+					<a href="">NBD</a>
+					<span>|</span>
+					<a href="">联想超融合</a>
+					<span>|</span>
+					<a href="">联想研究院</a>
+					<span>|</span>
+					<a href="">智慧医疗</a>
+					<div class="fr region">选择国家和地区</div>
+					<div class="chart fr"></div>
+				</div>
+				<span class="fl copyright">
+					版权所有：1998-2019 联想集团
+					<span>|</span>
+					<a href="">法律公告</a>
+					<span>|</span>
+					<a href="">隐私权政策</a>
+					<span>|</span>
+					<a href="">京ICP备11035381</a>
+					<span>|</span>
+					<a href="">京公网安备110108007970号</a>
+					<span>|</span>
+					<a href="">营业执照：110000410127232</a>
+					<span>|</span>
+					<a href=""><img src="img/shopp/yejiao/xuebitu1.png">销售网点</a>
+					<span>|</span>
+					<a href=""><img src="img/shopp/yejiao/xuebitu2.png">服务网点</a>
+				</span>
+			</div>
+		</div>
+	</body>
+</html>

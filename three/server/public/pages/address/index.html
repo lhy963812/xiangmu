@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="shortcut icon" type="text/css" href="/static/images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="/static/reset.css" />
+		<link rel="stylesheet" type="text/css" href="address-picker.css"/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="page-wrapper list">
+			<div class="header clearfix">
+				<a href="javascript:void(0)" onclick="window.history.back()">&lt;</a>
+				<h1>地址管理</h1>
+				<a href="javascript:void(0)" class="nav-show">···</a>
+			</div>
+			<div class="nav">
+				<a href="/pages/home/index.html">
+					<i><img src="shouye.png" ></i>
+					<span>首页</span>
+				</a>
+				<a href="">
+					<i><img src="sousuo.png" ></i>
+					<span>搜索</span>
+				</a>
+				<a href="/pages/personal/index.html">
+					<i><img src="geren.png" ></i>
+					<span>个人中心</span>
+				</a>
+			</div>
+			<div class="content">
+				<div class="address-list">
+					<ul></ul>
+					<button class="btn-add">+ 新增地址</button>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrapper edit" style="display: none;">
+			<div class="header">
+				<a href="">&lt;</a>
+				<h1>新增收货地址</h1>
+			</div>
+			<div class="content">
+				<form action="">
+					<div class="form-item">
+						<label for="">收货人姓名：</label>
+						<input type="text" class="form-receive-name" placeholder="请输入收货人姓名" />
+					</div>
+					<div class="form-item">
+						<label for="">手机号码：</label>
+						<input type="text" class="form-receive-phone" placeholder="请输入手机号码" />
+					</div>
+					<div class="form-item">
+						<label for="">所在地区：</label>
+						<input type="text" class="form-receive-region" placeholder="请输入省市区" onfocus="focusHandler(this)" />
+					</div>
+					<div class="form-item">
+						<label for="">街道地址：</label>
+						<input type="text" class="form-receive-detail" placeholder="请输入详细地址" />
+					</div>
+				</form>
+				<button type="button" class="btn-save">保存</button>
+			</div>
+		</div>
+		
+		
+		<script src="/static/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/js-cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/notice.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/http.js" type="text/javascript" charset="utf-8"></script>
+		<script src="regions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="address-picker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

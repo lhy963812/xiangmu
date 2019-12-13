@@ -1,0 +1,242 @@
+.page-wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*  */
+.header{
+	position: fixed;
+	top: 0;
+	height: 40px;
+	width: 100%;
+	z-index: 999;
+}
+.header>a.houtui{
+	position: absolute;
+	top: 7px;
+	left: 5px;
+}
+.header>a.houtui>img{
+	width: 40px;
+}
+.header>a.detail{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.header>a.detail>img{
+	width: 24px;
+}
+.nav-top{
+	position: absolute;
+	top: 35px;
+	right: 22px;
+	border: 6px;
+	border-color: transparent transparent #efefef transparent;
+	border-style: solid;
+	display: none;
+}
+ul.nav-content{
+	display: none;
+	position: absolute;
+	top: 47px;
+	right: 15px;
+	width: 100px;
+	border-radius: 4px;
+	background-color: #EFEFEF;
+}
+ul.nav-content>li{
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	padding-left: 14px;
+	border-bottom: 1px solid #ccc;
+}
+ul.nav-content>li>a{
+	color: #343434;
+}
+/* 内容 */
+.content{
+	flex-grow: 1;
+}
+.banner{
+	overflow: hidden;
+	width: 100%;
+	touch-action: pan-x;
+	position: relative;
+}
+.banner>ul.scroll{
+	display: flex;
+}
+.banner>ul.scroll>li{
+	flex-grow: 1;
+	font-size: 0;
+}
+.banner>ul.scroll>li>img{
+	width: 100%;
+}
+.banner>.indicator{
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	color: #4A4A4A;
+}
+
+/* 价格 */
+.price{
+	font-size: 14px;
+	color: #F4364C;
+	padding: 0 15px;
+	margin-top: 10px;
+}
+.price>span{
+	font-weight: bold;
+	font-size: 24px;
+	color: #f4364c;
+}
+.name{
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 15px;
+	margin-top: 5px;
+}
+.remark{
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 15px;
+	margin-top: 5px;
+}
+.content>img{
+	width: 100%;
+}
+/* 页脚 */
+.footer{
+	position: fixed;
+	height: 48px;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px solid #808080;
+	background-color: #fff;
+}
+.footer>a{
+	float: left;
+	width: 15%;
+	height: 100%;
+	text-align: center;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
+.footer>a>img{
+	width: 24px;
+	display: block;
+	margin: 0 auto;
+	line-height: 24px;
+}
+.footer>a>span{
+	color: #808080;
+	font-size: 10px;
+	display: block;
+	margin-top: 2px;
+}
+a.cart{
+	position: relative;
+}
+a.cart>span.cart-total{
+	display: none;
+	position: absolute;
+	left: 60%;top: 0;
+	background-color: rgba(240,78,46);
+	color: #fff;
+	width: 18px;height: 18px;line-height: 18px;
+	border-radius: 50%;text-align: center;
+}
+button.btn-toggle{
+	float: left;
+	height: 100%;
+	width: 30%;
+	background-color: #2a2a2a;
+	font-size: 14px;
+	color: #fff;
+}
+button.btn-ljgm{
+	float: left;
+	height: 100%;
+	width: 25%;
+	background-color: #F4364C;
+	font-size: 14px;
+	color: #fff;
+}
+
+/* 加入购物车弹出层 */
+.dialog-wrapper{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.dialog{
+	height: 75%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 0;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+}
+.dialog>.dialog-title{
+	height: 100px;
+	display: flex;
+	flex-shrink: 0;
+}
+.dialog>.dialog-title>img{
+	flex-shrink: 0;
+	width: 90px;
+}
+.dialog>.dialog-title>.dialog-title-right{
+	flex-grow: 1;
+	padding: 20px 5px;
+}
+.dialog>.dialog-title>.dialog-title-right>span.price{
+	font-size: 16px;
+	display: block;
+	color: #BF1111;
+	margin-bottom: 10px;
+}
+.dialog>.dialog-title>.dialog-title-right>span:last-child{
+	font-size: 12px;
+	color: rgb(102,102,102);
+}
+.dialog>.dialog-title>.dialog-title-right>span:last-child>em.count{
+	font-style: normal;
+}
+.dialog>.content-wrapper{
+	flex-grow: 1;
+	padding: 0 15px;
+}
+.dialog>.content-wrapper>span{
+	margin: 0 5px;
+}
+.dialog>.content-wrapper>span:first-child{
+	color: #B0B0B0;
+	font-size: 13px;
+}
+.dialog>.content-wrapper>span.decrease,
+.dialog>.content-wrapper>span.count,
+.dialog>.content-wrapper>span.increase{
+	float: right;
+}
+.dialog>button.btn-add{
+	flex-shrink: 0;
+	height: 40px;
+	margin: 0 20px;
+	border-radius: 15px;
+    background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+	color: #fff;
+	text-align: center;
+}
